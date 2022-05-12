@@ -1,0 +1,10 @@
+.homeimg {
+    width: 130rem !important;
+  max-height: 50rem !important;
+    object-fit: cover !important;
+}
+.figure-caption {
+    background-color: rgba(36, 27, 27, 0.5) !important;
+    padding: 1rem !important;
+    
+}

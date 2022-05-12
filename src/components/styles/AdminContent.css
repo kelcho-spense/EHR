@@ -1,0 +1,9 @@
+.leftSide {
+    margin-top: 0.5rem !important;
+    padding-left: 3rem !important;
+    border-right: solid 2px #5b5858 !important;
+}
+.dimg{
+    border-radius:  40%;
+    width:160px;
+}
