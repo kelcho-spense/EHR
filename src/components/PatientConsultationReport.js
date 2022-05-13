@@ -2,7 +2,6 @@ import React,{useEffect,useState} from 'react';
 import Table from 'react-bootstrap/Table';
 import { useMoralis, useMoralisQuery } from 'react-moralis';
 function PatientConsultationReport({currentPatientWalletId}) {
-    const wallet = currentPatientWalletId.toLowerCase();
     const { isWeb3Enabled, enableWeb3 } = useMoralis();
     const [consultation,setConsultation] = useState([]);
 

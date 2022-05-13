@@ -74,7 +74,7 @@ function AddDoctorPanel() {
            <Row className="mb-2">             
              <Col className="sm-12 md-12">
                <Form.Floating>
-                 <Form.Control  id="DoctorId" type="text" name='ethAddress'
+                 <Form.Control  id="DoctorId" type="text" name="ethAddress"
                   placeholder="Doctor Id"  {...register("ethAddress",{ required:true})}  />
                  <Label htmlFor="DoctorId">Doctor ethAddress</Label>
                   {errors.ethAddress && <span className='text-danger'>doctor ethAddress is required</span>}

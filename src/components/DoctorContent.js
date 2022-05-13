@@ -207,7 +207,7 @@ function FetchCurrentDoctor({currentDocWalletId}) {
       {/* doctor update modal */}
         <Modal  size="lg" show={show} onHide={handleClose} >        
         <Modal.Body>
-          <Card className='shadow-lg'> {console.log(updatedocinfo)}
+          <Card className='shadow-lg'>
         <Card.Body>
         <form onSubmit={handleSubmit(updateDoctor)}> 
           <Row className="mb-2">
@@ -251,7 +251,7 @@ function FetchCurrentDoctor({currentDocWalletId}) {
             
             <Col  sm={12} md={12} lg={12}>
               <Form.Floating>
-                <Form.Control  id="DoctorId" type="text" name='ethAddress' 
+                <Form.Control  id="DoctorId" type="text" name="ethAddress" 
                   placeholder="Doctor ethAddress"  {...register("ethAddress",{ required:true})}  />
                 <Label htmlFor="DoctorId">Doctor ethAddress: {updatedocinfo.ethAddress}</Label>
                   {errors.ethAddress && <span className='text-danger'>doctor ethAddress id is required</span>}
@@ -306,7 +306,7 @@ function FetchCurrentDoctor({currentDocWalletId}) {
                                   <Card.Img className='dimg' height={100} width={100}  src={`https://avatars.dicebear.com/api/pixel-art/${doc.firstname}.svg`} alt="nopic" />
                             </Col>
                             <Col lg={10} md={10} sm={12} className='text-center' >
-                                <div  className=' mb-2 fs-5'>DoctorWalletId :<span className=' text-info'>{doc.ethAddress}</span></div >
+                                <div  className=' mb-2 fs-5'>Doctor ethAddress :<span className=' text-info'>{doc.ethAddress}</span></div >
                             </Col>   
                         </Row>
                         <Row >

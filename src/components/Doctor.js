@@ -15,8 +15,6 @@ function Doctor () {
   const [walletvalid, setwalletvalid] = useState(false);
   const [showDoctorContent, setDoctorContent] = useState(false);
   const { authenticate,enableWeb3, isAuthenticated, user,signup,login } = useMoralis();
-  const [loginTrue,setloginTrue] = useState(false);
-  const [doctorWalletIds,setDoctorWalletIds] = useState([]);
   const [walletId,setwalletId] = useState('');
   const {currentDocWalletId,setCurrentDocWalletId} = useContext(DoctorContext);
   const { register, handleSubmit,reset, formState:{errors} } = useForm();
@@ -55,7 +53,7 @@ const loginAction = async (data) => {
 }  
 const signupAction = async (data) => {
   try {
-   await  signup(data.suser, data.spass,'',{ethAddress:currentDocWalletId});
+   await  signup(data.suser, data.spass);
     setCurrentDocWalletId(walletId);
     reset();
   } catch (error) {
@@ -66,7 +64,7 @@ const signupAction = async (data) => {
 }  
 return (
   <div className='font-monoscope mx-3'  >
-    { console.log(doctorWalletIds)}
+   
     { walletvalid ? (     
         isAuthenticated ? ( <DoctorContent/>):(              
               <Row>

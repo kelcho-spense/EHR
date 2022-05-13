@@ -121,10 +121,10 @@ function ViewAllDoctorsPanel() {
               <Row className="mb-2">
                 <Col className="sm-12 md-12">
                   <Form.Floating>
-                    <Form.Control  id="DoctorId" type="text" name='walletid' 
-                      placeholder="Doctor Id"  {...register("walletid",{ required:true})}  />
-                    <Label htmlFor="DoctorId">Doctor Id: {updatedocinfo.walletid}</Label>
-                      {errors.walletid && <span className='text-danger'>doctor walletid is required</span>}
+                    <Form.Control  id="DoctorethAddress" type="text" name='ethAddress' 
+                      placeholder="Doctor ethAddress"  {...register("ethAddress",{ required:true})}  />
+                    <Label htmlFor="DoctorethAddress">Doctor ethAddress: {updatedocinfo.ethAddress}</Label>
+                      {errors.ethAddress && <span className='text-danger'>doctor ethAddress is required</span>}
                   </Form.Floating>
                 </Col>
               </Row>

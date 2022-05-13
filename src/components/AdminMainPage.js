@@ -530,7 +530,7 @@ function PaymentCard({cardTitle,amount,icon,bgcolor}) {
        <Card.Body>
        <FontAwesomeIcon icon={icon}  className="fa-2xl"/>
           <Card.Title>{cardTitle}</Card.Title>
-          <Card.Subtitle>ETH {amount}</Card.Subtitle>
+          <Card.Subtitle>{amount}</Card.Subtitle>
        </Card.Body>
     </Card>
     </>
